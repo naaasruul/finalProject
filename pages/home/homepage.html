@@ -1,0 +1,121 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="homeStyle.css">
+    </head>
+    <body>  
+        <nav>
+            <div class="logo"><i onclick="toggleSlideMenu()" class="fa-solid fa-bars fa-lg" style="color: #ffffff;"></i>Explore Malacca </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about-melaka">About Melaka</a></li>
+                <li>
+                    <select name="" onchange="navigateToPage()" id="attractions">
+                        <option selected disabled>Attractions</option>
+                        <option value="../food/food.html">Food</option>
+                        <option value="../shopping/shopping.html">Shopping</option>
+                        <option value="../beach/beach.html">Beach</option>
+                        <option value="../top10ThingstodoinMalacca/top10bestplaces.html">10 Things to do</option>
+                    </select>
+                </li>
+                <li><a href="#transportation">Transportation</a></li>
+                <li><a href="../../contact/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="sideMenu">
+            <span><h1>Side Menu </h1><i onclick="toggleSlideMenu()" class="fa-solid fa-x fa-lg"></i></span>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about-melaka">About Melaka</a></li>
+                <li><a href="#transportation">Transportation</a></li>
+                <li><a href="../../contact/contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <header>
+            <div class="tajuk">
+                <h1><span style="font-size: 30px; margin: 0px; padding: 0px;">Welcome to</span>
+                    <span style="margin: 0px; padding: 0px;">Melaka</span>
+                    <span style="font-size: 10px; margin-top: 0px; padding: 0px;">Explore the wonders of Melaka through our website, where you'll discover a captivating world of information, activities, and hidden gems waiting to be uncovered</span>
+                </h1>
+            </div>
+            <div style="position: relative; right: 5em; top: 1em; " class="calender">
+                <span class="calender-time"><span><h3>Hour</h3><h1 id="hour"></h1></span><h1>:</h1><span><h3>Minute</h3><h1 id="minute"></h1></span></span>
+                <span class="calender-date"><span><h5 id="day"></h5></span><h5>/</h5><span><h5 id="month"></h5></span><h5>/</h5><span><h5 id="year"></h5></span></span>
+            </div>
+            <!-- <div class="calender">
+                <h1 id="hour"></h1><h1>:</h1><h1 id="minute"></h1>
+            </div>   -->
+        </header>
+
+        <!-- content Section -->
+        <section class="content">
+            <div  id="about-melaka" class="general-melaka">
+                <h1>Explorer Melaka</h1>
+                <p>Malacca stands out as an enchanting destination in Malaysia, celebrated for its rich history, including the Sultanate and colonial periods. This state boasts a diverse landscape, with forests, lakes, and pockets of wilderness amidst scattered hills. In the more urban areas, the local government has adorned the region with captivating architectural wonders, drawing tourists from all corners of the globe. The extensive range of attractions positions Malacca as a leading tourist hub. Throughout the area, countless sites promise to fill your day with boundless enjoyment.</p>
+                <p>
+                    Malacca offers a plethora of exciting activities to ensure your visit is unforgettable. Let's provide you with an overview of the ideal weekend plan you can devise in this captivating region</p>
+            </div>
+            <!-- more things about melaka -->
+            <div class="more-melaka">
+                <!-- banner -->
+                <img class="afamosa" src="img/melaka-cantik.jpg" alt="">
+                <span class="sub-melaka-title">
+                    <h1>Visit Malacca</h1>
+                    <p>The weekend in Malacca is going to be a blasting one for you, especially when you will have such wonderful places to visit</p>
+                </span>   
+            </div>
+            <div class="categoriesParent">
+                <!-- places in melaka container -->
+                <span>
+                    <a  href="../food/food.html"><img onmouseover="expandFunc('img1')" onmouseout="normalFunc('img1')" id="img1" class="subPlace-img" src="sub-places-img/hard-rock.jpg" alt=""></a>
+                    <h1>Food</h1>
+                    <p>Explore the diverse culinary wonders of Melaka with a variety of food categories that showcase the rich flavors and unique heritage of this historic city.</p>
+                </span>
+                <span>
+                    <a href="../shopping/shopping.html"><img onmouseover="expandFunc('img2')" onmouseout="normalFunc('img2')" id="img2" class="subPlace-img" src="sub-places-img/shopping.jpg" alt=""></a>
+                    <h1>Shopping</h1>
+                    <p>Shop 'til You Drop in Melaka: Uncover the city's retail treasures, from traditional markets to modern boutiques. Discover the best shopping spots in Melaka right here.</p>
+                </span>
+                <span>
+                    <a href="../activities/activities.html"><img onmouseover="expandFunc('img3')" onmouseout="normalFunc('img3')" id="img3" class="subPlace-img" src="sub-places-img/outdoor.jpg" alt=""></a>
+                    <h1>Outdoor Activities</h1>
+                    <p>Embrace the Outdoors in Melaka: Dive into the natural beauty and adventure that Melaka has to offer. Explore exciting outdoor activities for all ages and interests.</p>
+                </span>
+                <span>
+                    <a href="../beach/beach.html"><img onmouseover="expandFunc('img4')" onmouseout="normalFunc('img4')" id="img4" class="subPlace-img" src="sub-places-img/pulau-besar.jpg" alt=""></a>
+                    <h1>Beach</h1>
+                    <p>Melaka's Hidden Beach Gems: Discover the tranquil and picturesque beaches along the Melakan coast. From serene shores to sandy retreats, explore the beauty of Melaka's coastal wonders</p>
+                </span>
+                <span>
+                    <a href="gallery.html"><img onmouseover="expandFunc('img5')" onmouseout="normalFunc('img5')" id="img5" class="subPlace-img" src="sub-places-img/gallery.jpg" alt=""></a>
+                    <h1>Gallery</h1>
+                    <p>Immerse in Art and Culture: Delve into Melaka's vibrant art scene by exploring its galleries and exhibition spaces. Discover the city's artistic gems and cultural treasures right here</p>
+                </span>
+                <span>
+                    <a href="top10bestplaces.html"><img onmouseover="expandFunc('img6')" onmouseout="normalFunc('img6')" id="img6" class="subPlace-img" src="sub-places-img/vintage.jpg" alt=""></a>
+                    <h1>Top 10 Things to do in Melaka</h1>
+                    <p>Melaka's Top 10 Must-Visit Places: Explore the definitive list of the city's most iconic and enchanting destinations. From historical landmarks to cultural gems, discover Melaka's essential sights here.</p>
+                </span>
+            </div>       
+        </section>
+       
+        <footer>
+            <span>
+               <h1>Follow Us</h1>
+                <ul>
+                    <li><a href="https://www.instagram.com/naaasruul/">Instagram</a></li>
+                    <li><a href="https://www.instagram.com/naaasruul/">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/naaasruul/">twitter</a></li>
+                </ul>
+            </span>
+        </footer>
+    </body>
+
+    <script src="https://kit.fontawesome.com/d46a78d0a5.js" crossorigin="anonymous"></script>
+    <script src="homeScript.js"></script>
+    <script src="../script.js"></script>
+    </html>

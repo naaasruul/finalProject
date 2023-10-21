@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../pages/style.css">
+    <link rel="stylesheet" href="contactStyle.css">
+</head>
+<body>
+    <nav>
+        <div class="logo"><i onclick="toggleSlideMenu()" class="fa-solid fa-bars fa-lg" style="color: #ffffff;"></i>Explore Malacca </div>
+        <ul>
+            <li><a href="../pages/home/homepage.html">Home</a></li>
+            <li><a href="../pages/home/homepage.html#about-melaka">About Melaka</a></li>
+            <li>
+                <select name="" onchange="navigateToPage()" id="attractions">
+                    <option selected disabled>Attractions</option>
+                    <option value="../pages/food/food.html">Food</option>
+                    <option value="../pages/shopping/shopping.html">Shopping</option>
+                    <option value="../pages/beach/beach.html">Beach</option>
+                    <option value="../pages/top10ThingstodoinMalacca/top10bestplaces.html">10 Things to do</option>
+                </select>
+            </li>
+            <li><a href="#transportation">Transportation</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div id="sideMenu">
+        <span><h1>Side Menu </h1><i onclick="toggleSlideMenu()" class="fa-solid fa-x fa-lg"></i></span>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="../home/homepage.html#about-melaka">About Melaka</a></li>
+            <li><a href="#transportation">Transportation</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <video id="video-background" autoplay muted loop>
+        <source src="video.mp4" type="video/mp4">
+    </video>
+    <form action="">
+        <h1>Contact Us</h1>
+        <div class="row">
+            <span><label for="">First Name</label><input id="firstname" type="text"></span>    
+            <span><label for="">Last Name</label><input id="lastname" type="text"></span>
+        </div>
+        <div>
+
+            <span><label for="">Email</label><input id="email" type="email"></span> 
+        </div>
+        <span><label for="">Leave us a few word*</label><textarea id="feedback" style="height: 200px;" type=""></textarea></span> 
+        <span id="submit-container">kasdjaklsjd</span>
+    </form>
+</body>
+<script src="https://kit.fontawesome.com/d46a78d0a5.js" crossorigin="anonymous"></script>
+<script src="../pages/script.js"></script>
+</html>

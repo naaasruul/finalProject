@@ -1,0 +1,44 @@
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(foodimg/food-header.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 4em;
+}
+
+section{
+    padding: 2em 7em;
+}
+
+section .food-parent{
+    margin-top: 3em ;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 19px;
+}
+
+.food-parent span {
+    border-radius: 15px ;
+    padding: 1em;
+    width: 90%;
+    box-shadow: -8px 6px 66px -17px rgba(0,0,0,0.5);
+    -webkit-box-shadow: -8px 6px 66px -17px rgba(0,0,0,0.5);
+    -moz-box-shadow: -8px 6px 66px -17px rgba(0,0,0,0.5);
+    
+}
+.food-parent span img{
+    width: 100%;
+    
+    height: 50vh;
+    object-fit: cover;
+    border-radius: 7.5px ;
+    border: solid 3px rgb(240, 240, 240);
+    
+}
+

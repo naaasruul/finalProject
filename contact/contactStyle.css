@@ -1,0 +1,45 @@
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 30%;
+    padding: 2em;
+    color: white;
+    background-color: rgba(66, 66, 66, 0.492);
+    position: absolute ;   
+    top: 20%;
+    left: 35%;
+    
+
+}
+form .row{
+    display: flex;
+    flex-direction: row;
+    gap: 4em;
+    width: 100%;
+    
+}
+form span{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+form span input, textarea{
+    padding: 0.6em;
+    border: 1px black solid;
+}
+
+
+#video-background {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
