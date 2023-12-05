@@ -8,27 +8,116 @@
     <link rel="stylesheet" href="shoppingStyle.css">
 </head>
 <body>
+    
+    <div id="sideMenu">
+        <span><h1>Side Menu </h1><img src="../close.png" onclick="toggleSlideMenu()" class="icon"></span>
+        <ul>
+            <li><a href="../home/homepage.html">Home</a></li>
+            <li><a href="../home/homepage.html#about-melaka">About Melaka</a></li>
+            <li><a href="../myownphoto/gallery.html">Review</a></li>
+            <li><a href="../../contact/contact.html">Contact</a></li>
+        </ul>
+    </div>
     <nav>
-        <div class="logo"><i onclick="toggleSlideMenu()" class="fa-solid fa-bars fa-lg" style="color: #ffffff;"></i>Explore Malacca </div>
+        <div class="logo"><img src="../burgerMenu.png" onclick="toggleSlideMenu()" class="icon">Explore Malacca </div>
         <ul>
             <li><a href="../home/homepage.html">Home</a></li>
             <li><a href="../home/homepage.html#about-melaka">About Melaka</a></li>
             <li>
-                <select name="" onchange="navigateToPage()" id="attractions">
-                    <option selected disabled>Attractions</option>
+                <select name="" onchange="navigateToPage()" id="Categories">
+                    <option selected disabled>Categories</option>
                     <option value="../food/food.html">Food</option>
                     <option value="../shopping/shopping.html">Shopping</option>
-                    <option value="../beach/beach.html">Beach</option>
-                    <option value="../top10ThingstodoinMalacca/top10bestplaces.html">10 Things to do</option>
-
-
+                    <option value="../activities/activities.html">Activities</option>
                 </select>
             </li>
-            <li><a href="#transportation">Transportation</a></li>
+            <li><a href="../myownphoto/gallery.html">Review</a></li>
             <li><a href="../../contact/contact.html">Contact</a></li>
         </ul>
-    </nav>
+    </nav> 
+    <header>
+        <h1>Shopping</h1>
+    </header>
+    <div class="parent">
+        <div class="div1"> 
+
+            <h1>Categories</h1>
+            <!-- call a function and the parameter is = to object in js -->
+            <h3 onclick="showItem(sport)">Sport</h3>
+            <h3 onclick="showItem(gift)">Gift</h3>
+            <h3 onclick="showItem(beauty)">Beauty and Personal Care</h3>
+            <h3 onclick="showItem(toy)">Toys and Games</h3>
+            <h3 onclick="showItem(health)">Health and Wellness</h3>
+        </div>
+        
+        <div class="div2"><h1>Shopping</h1></div>
+        <div class="div3">
+            <span class="img-container">
+                <img id="img-item1" class="gambar" src="" alt="">
+            </span>
+            <span id="item">
+                <span>
+                    <h1 id="title-item1" class="item-title"></h1>
+                    <p id="address-item1" class="item-desc"></p>
+                    <p id="hours-item1" class="item-desc"></p>
+                </span>
+            </span>
+        </div>
+        
+        <div class="div4">
+            <span class="img-container">
+
+                <img id="img-item2" class="gambar" src="" alt="">
+            </span>
+            <span id="item">
+                <span>
+                    <h1 id="title-item2" class="item-title"></h1>
+                    <p id="address-item2" class="item-desc"></p>
+                    <p id="hours-item2" class="item-desc"></p>
+                </span>
+            </span>
+        </div>
+        <div class="div5">
+            <span class="img-container">
+                <img id="img-item3" class="gambar" src="" alt="">
+
+            </span>
+            <span id="item">
+                <span>
+                    <h1 id="title-item3" class="item-title"></h1>
+                    <p id="address-item3" class="item-desc"></p>
+                    <p id="hours-item3" class="item-desc"></p>
+                </span>
+            </span>
+        </div>
+        <div class="div6">
+            <span class="img-container">
+                <img id="img-item4" class="gambar" src="" alt="">
+            </span>
+            <span id="item">
+                <span>
+                    <h1 id="title-item4" class="item-title"></h1>
+                    <p id="address-item4" class="item-desc"></p>
+                    <p id="hours-item4" class="item-desc"></p>
+                </span>
+            </span>
+        </div>
+        </div> 
+        <footer>
+            <span class="logo-footer">
+                <h1>Melaka<br>Website</h1>
+            </span>
+            <span class="secondary-footer">
+               <h1>Follow Us</h1>
+                <ul>
+                    <li><a href="https://www.instagram.com/melakacity/?hl=en">Instagram</a></li>
+                    <li><a href="https://www.facebook.com/melakamalacca/?locale=ms_MY">Facebook</a></li>
+                    <li><a href="https://twitter.com/Melakahariini?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">twitter</a></li>
+                </ul>
+            </span>
+        </footer>
 </body>
 <script src="https://kit.fontawesome.com/d46a78d0a5.js" crossorigin="anonymous"></script>
 <script src="../script.js"></script>
+<script src="shoppingScript.js"></script>
 </html>

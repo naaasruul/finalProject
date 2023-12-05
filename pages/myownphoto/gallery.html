@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="galleryStyle.css">
+</head>
+<body>
+    <nav>
+        <div class="logo"><div class="logo"><img src="../burgerMenu.png" onclick="toggleSlideMenu()" class="icon">Explore Malacca </div> </div>
+        <ul>
+            <li><a href="../home/homepage.html">Home</a></li>
+            <li><a href="../home/homepage.html#about-melaka">About Melaka</a></li>
+            <li>
+                <select name="" onchange="navigateToPage()" id="Categories">
+                    <option selected disabled>Categories</option>
+                    <option value="../food/food.html">Food</option>
+                    <option value="../shopping/shopping.html">Shopping</option>
+                    <option value="../activities/activities.html">Activities</option>
+                </select>
+            </li>
+            <li><a href="#">Review</a></li>
+            <li><a href="../../contact/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div id="sideMenu">
+        <span><h1>Side Menu </h1><img src="../close.png" onclick="toggleSlideMenu()" class="icon"></span>
+        <ul>
+            <li><a href="../home/homepage.html">Home</a></li>
+            <li><a href="../home/homepage.html#about-melaka">About Melaka</a></li>
+            <li><a href="#">Reviews</a></li>
+            <li><a href="../../contact/contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <header>
+        <h1>Review</h1>
+    </header>
+    <section>
+        <input id="enable-review" style="cursor: pointer;" type="button" value="Click to add review" >
+        <div id="review-border" class="hero">
+                <h1>Write Your review</h1>
+                <input disabled value="" placeholder="Email"  id="reviewName" type="email"/>
+                <input disabled value="" placeholder="Reviews" id="review" type="text"/>
+                <select style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: black;" name="Rating" disabled id="rating">
+                    <option selected disabled>Rating</option>
+                    <option value="5 Stars">5 Stars</option>
+                    <option value="4 Stars">4 Stars</option>
+                    <option value="3 Stars">3 Stars</option>
+                    <option value="2 Stars">2 Stars</option>
+                    <option value="1 Stars">1 Stars</option>
+                </select>
+                <button disabled id="reviewSubmit" style="width: 50%;"  onclick="addReviews()">Submit</button>
+            </div>
+    </section>
+        <!-- a container to arrage all the reviews -->
+        <div id="review-container" class="parent"></div>
+        <footer>
+            <span class="logo-footer">
+                <h1>Melaka<br>Website</h1>
+            </span>
+            <span class="secondary-footer">
+               <h1>Follow Us</h1>
+                <ul>
+                    <li><a href="https://www.instagram.com/melakacity/?hl=en">Instagram</a></li>
+                    <li><a href="https://www.facebook.com/melakamalacca/?locale=ms_MY">Facebook</a></li>
+                    <li><a href="https://twitter.com/Melakahariini?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">twitter</a></li>
+                </ul>
+            </span>
+        </footer>
+    
+</body>
+    <script>
+    var enableBtn = document.getElementById("enable-review")
+    enableBtn.addEventListener('click',enableBtnFunc,true)
+
+    function enableBtnFunc(){
+      
+      document.getElementById("reviewName").removeAttribute("disabled");
+      document.getElementById("review").removeAttribute("disabled");
+      document.getElementById("reviewSubmit").removeAttribute("disabled");
+      document.getElementById("rating").removeAttribute("disabled");
+      
+      reviewBorder = document.getElementById("review-border")
+      reviewBorder.setAttribute("class","hero-active")
+      return;
+    }
+    </script>
+
+<script src="../script.js"></script>
+<script src="https://kit.fontawesome.com/d46a78d0a5.js" crossorigin="anonymous"></script>
+</html>

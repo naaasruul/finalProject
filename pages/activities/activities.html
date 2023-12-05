@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outdoor Activities</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="activitiesStyle.css">
+</head>
+<body>
+    <nav>
+        <div class="logo"><img src="../burgerMenu.png" onclick="toggleSlideMenu()" class="icon"></i>Explore Malacca </div>
+        <ul>
+            <li><a href="../home/homepage.html">Home</a></li>
+            <li><a href="../home/homepage.html#about-melaka">About Melaka</a></li>
+            <li>
+                <select name="" onchange="navigateToPage()" id="Categories">
+                    <option selected disabled>Categories</option>
+                    <option value="../food/food.html">Food</option>
+                    <option value="../shopping/shopping.html">Shopping</option>
+                    <option value="../activities/activities.html">Outdoor Activities</option>
+                </select>
+            </li>
+            <li><a href="../myownphoto/gallery.html">Review</a></li>
+            <li><a href="../../contact/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div id="sideMenu">
+        <span><h1>Side Menu </h1><img src="../close.png" onclick="toggleSlideMenu()" class="icon"></span>
+        <ul>
+            <li><a href="../home/homepage.html">Home</a></li>
+            <li><a href="../home/homepage.html#about-melaka">About Melaka</a></li>
+            <li><a href="../myownphoto/gallery.html">Review</a></li>
+            <li><a href="../../contact/contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <header>
+       <h1>Outdoor Activities</h1>
+    </header>
+
+    <section>
+        <div class="content-title">
+            <span>
+                <h2>Where To Go</h2>
+                <h1>Popular destinations</h1>
+            </span>
+        </div>
+        <div class="parent">
+            <div class="child">
+                <span class="placeDetails">
+                    <h1 class="placeTitle">SKYTREX Adventure Melaka</h1>
+                    <p class="placeDesc" onmouseenter="textActive('placeDesc1')" onmouseout="textDeactive('placeDesc1')" id="placeDesc1">Skytrex Adventure Park is a thrilling destination for nature enthusiasts and adventure seekers. Nestled within lush and scenic forests, Skytrex provides a unique opportunity to explore the great outdoors while experiencing an adrenaline rush like no other. </p>
+                    <p class="placeLocation">Location: Jalan Taman Botanikal, 75450 Durian Tunggal, Melaka</p>
+                    <p class="placeHours">9.00AM-6.00PM</p>
+                </span>
+            </div>
+            <div class="child">
+                <span class="placeImg">
+                    <img src="activitiesimg/image1.jpg" alt="">
+                </span>
+            </div>
+
+            <div class="child">
+                <span class="placeImg">
+                    <img src="activitiesimg/image2.jpg" alt="">
+                </span>
+            </div>
+            <div class="child">
+                <span class="placeDetails">
+                    <h1 class="placeTitle">Pantai Klebang</h1>
+                    <p class="placeDesc" onmouseenter="textActive('placeDesc2')" onmouseout="textDeactive('placeDesc2')" id="placeDesc2">A serene coastal haven in Melaka, Malaysia, with golden sands, iconic sand dunes, and breathtaking sunsets. Relax, play, and savor local flavors by the sea</p>
+                    <p class="placeLocation">Location: Pantai Klebang</p>
+                    <p class="placeHours">Open all day</p>
+                </span>
+            </div>
+            
+            <div class="child">
+                <span class="placeDetails">
+                    <h1 class="placeTitle">Zoo Melaka</h1>
+                    <p class="placeDesc" id="placeDesc3" onmouseenter="textActive('placeDesc3')" onmouseout="textDeactive('placeDesc3')"  >Jalan Tun Abdul Razak, Hang Tuah Jaya, 75450 Ayer Keroh, Melaka</p>
+                    <p class="placeLocation">Location: Jalan Tun Abdul Razak, Hang Tuah Jaya, 75450 Ayer Keroh, Melaka</p>
+                    <p class="placeHours">10.00AM-4.00PM</p>
+                </span>
+            </div>
+            <div class="child">
+                <span class="placeImg">
+                    <img src="activitiesimg/image3.jpg" alt="">
+                </span>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <span class="logo-footer">
+            <h1>Melaka<br>Website</h1>
+        </span>
+        <span class="secondary-footer">
+           <h1>Follow Us</h1>
+            <ul>
+                <li><a href="https://www.instagram.com/melakacity/?hl=en">Instagram</a></li>
+                <li><a href="https://www.facebook.com/melakamalacca/?locale=ms_MY">Facebook</a></li>
+                <li><a href="https://twitter.com/Melakahariini?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">twitter</a></li>
+            </ul>
+        </span>
+    </footer>
+</body>
+<script src="../script.js"></script>
+</html>

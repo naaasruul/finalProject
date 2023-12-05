@@ -1,0 +1,121 @@
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(imageLain.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 4em;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em 7em;
+}
+
+#enable-review{
+    padding: 1em;
+    border: 2px black solid;
+    border-radius: 15px;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: rgb(165, 165, 165) dotted 2px;
+    padding: 0 1em 1em 1em;
+    border-radius: 15px;
+    margin-top: 2em ;
+    align-items: center;
+    background-color: beige;
+    width: 50%;
+    justify-content: center;
+    color: rgba(128, 128, 128, 0.622);
+}
+.hero input, .hero button{
+    border: solid 2px;
+    border-color:  rgba(211, 211, 211, 0.622);
+    padding: 1em;
+    width: 70%;
+}
+
+.hero-active{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: rgb(75, 163, 63) solid 3px;
+    padding: 0 1em 1em 1em;
+    border-radius: 15px;
+    margin-top: 2em ;
+    align-items: center;
+    background-color: rgb(138, 228, 126);
+    width: 50%;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+}
+
+.hero-active input, .hero-active button{
+    border: solid 2px;
+    border-color: rgb(49, 106, 41);
+    padding: 1em;
+    width: 70%;
+}
+
+#review-container{
+    margin-top:2em ;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 24px;
+    padding: 2em 7em;
+    }
+
+    .box{
+        background-color: rgb(244, 233, 244);
+        height: 25vh;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        gap: 1.5em;
+        padding: 2em 1em 1em 1em;
+        border-radius: 15px;
+        box-shadow: -10px 14px 20px -6px rgba(0,0,0,0.54);
+        -webkit-box-shadow: -10px 14px 20px -6px rgba(0,0,0,0.54);
+        -moz-box-shadow: -10px 14px 20px -6px rgba(0,0,0,0.54);
+        text-align: center;
+
+    }
+
+    .box p{
+        font-size: 2em;
+    }
+    #details p, #details h1{
+        margin: 0;
+    }
+    #details .reviewNameTitle{
+        font-size: 1.5em;
+        height: 10px;
+        margin:0;height: auto;
+    }
+    #details .reviewStyle{
+        font-size: 30px;
+        /* font-family: ; */
+        height: 10px;
+        margin:0;height: auto;
+    }
+    #details .ratingStyle{
+        font-size: 1em;
+        height: 10px;
+        margin:0;height: auto;
+    }

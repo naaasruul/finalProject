@@ -9,29 +9,28 @@
     </head>
     <body>  
         <nav>
-            <div class="logo"><i onclick="toggleSlideMenu()" class="fa-solid fa-bars fa-lg" style="color: #ffffff;"></i>Explore Malacca </div>
+            <div class="logo"><img src="../burgerMenu.png" onclick="toggleSlideMenu()" class="icon"></i>Explore Malacca </div>
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#about-melaka">About Melaka</a></li>
                 <li>
-                    <select name="" onchange="navigateToPage()" id="attractions">
-                        <option selected disabled>Attractions</option>
+                    <select name="" onchange="navigateToPage()" id="Categories">
+                        <option selected disabled>Categories</option>
                         <option value="../food/food.html">Food</option>
                         <option value="../shopping/shopping.html">Shopping</option>
-                        <option value="../beach/beach.html">Beach</option>
-                        <option value="../top10ThingstodoinMalacca/top10bestplaces.html">10 Things to do</option>
+                        <option value="../activities/activities.html">Outdoor Activities</option>
                     </select>
                 </li>
-                <li><a href="#transportation">Transportation</a></li>
+                <li><a href="../myownphoto/gallery.html">Review</a></li>
                 <li><a href="../../contact/contact.html">Contact</a></li>
             </ul>
         </nav>
         <div id="sideMenu">
-            <span><h1>Side Menu </h1><i onclick="toggleSlideMenu()" class="fa-solid fa-x fa-lg"></i></span>
+            <span><h1>Side Menu </h1><img src="../close.png" onclick="toggleSlideMenu()" class="icon"></span>
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#about-melaka">About Melaka</a></li>
-                <li><a href="#transportation">Transportation</a></li>
+                <li><a href="../myownphoto/gallery.html">Review</a></li>
                 <li><a href="../../contact/contact.html">Contact</a></li>
             </ul>
         </div>
@@ -46,70 +45,71 @@
                 <span class="calender-time"><span><h3>Hour</h3><h1 id="hour"></h1></span><h1>:</h1><span><h3>Minute</h3><h1 id="minute"></h1></span></span>
                 <span class="calender-date"><span><h5 id="day"></h5></span><h5>/</h5><span><h5 id="month"></h5></span><h5>/</h5><span><h5 id="year"></h5></span></span>
             </div>
-            <!-- <div class="calender">
-                <h1 id="hour"></h1><h1>:</h1><h1 id="minute"></h1>
-            </div>   -->
         </header>
-
+        <div class="categoriesParent">
+            <span>
+                <a  href="../food/food.html"><img onmouseover="expandFunc('img1')" onmouseout="normalFunc('img1')" id="img1" class="subPlace-img" src="sub-places-img/hard-rock.jpg" alt=""></a>
+                <h1>Food</h1>
+            </span>
+            <span>
+                <a href="../shopping/shopping.html"><img onmouseover="expandFunc('img2')" onmouseout="normalFunc('img2')" id="img2" class="subPlace-img" src="sub-places-img/shopping.jpg" alt=""></a>
+                <h1>Shopping</h1>
+            </span>
+            <span>
+                <a href="../activities/activities.html"><img onmouseover="expandFunc('img3')" onmouseout="normalFunc('img3')" id="img3" class="subPlace-img" src="sub-places-img/outdoor.jpg" alt=""></a>
+                <h1>Outdoor Activities</h1>
+            </span>
+        </div> 
         <!-- content Section -->
+        <span id="about-melaka" class="history-title">
+            <h1>History</h1>
+        </span>
         <section class="content">
-            <div  id="about-melaka" class="general-melaka">
-                <h1>Explorer Melaka</h1>
-                <p>Malacca stands out as an enchanting destination in Malaysia, celebrated for its rich history, including the Sultanate and colonial periods. This state boasts a diverse landscape, with forests, lakes, and pockets of wilderness amidst scattered hills. In the more urban areas, the local government has adorned the region with captivating architectural wonders, drawing tourists from all corners of the globe. The extensive range of attractions positions Malacca as a leading tourist hub. Throughout the area, countless sites promise to fill your day with boundless enjoyment.</p>
-                <p>
-                    Malacca offers a plethora of exciting activities to ensure your visit is unforgettable. Let's provide you with an overview of the ideal weekend plan you can devise in this captivating region</p>
+            <!-- another content (history) -->
+            <div class="another-content">
+                <span>
+                    <h1 class="main-tilte">Founding of Melaka</h1>
+                    <p class="secondary-title">1402</p>
+                    <p class="desc">In the early 15th century, Parameswara, a Sumatran prince, embarked on a journey that would change the course of history. Fleeing from the turmoil of his homeland, he arrived on the shores of what is now modern-day Melaka and decided to establish a new kingdom. With its strategic location along the bustling trade routes of the Straits of Malacca, Melaka quickly grew into a prosperous and cosmopolitan city. This newfound kingdom attracted traders from China, India, Arabia, and beyond, making it a thriving center of commerce and culture in Southeast Asia.</p>
+                </span>
+                <img src="img/parameswara.jpg" alt="">
             </div>
-            <!-- more things about melaka -->
-            <div class="more-melaka">
-                <!-- banner -->
-                <img class="afamosa" src="img/melaka-cantik.jpg" alt="">
-                <span class="sub-melaka-title">
-                    <h1>Visit Malacca</h1>
-                    <p>The weekend in Malacca is going to be a blasting one for you, especially when you will have such wonderful places to visit</p>
-                </span>   
+            <div class="another-content2">
+                <span>
+                    <h1 class="main-tilte"> Portuguese Capture Melaka</h1>
+                    <p class="secondary-title">1511</p>
+                    <p class="desc">The year 1511 marked a pivotal moment in Melaka's history when Afonso de Albuquerque, a Portuguese admiral, led a determined assault on the city. The Portuguese forces successfully captured Melaka, bringing an end to the prosperous Melaka Sultanate. This event transformed the city into a hub of Portuguese influence in Southeast Asia, and it marked the beginning of a new chapter in Melaka's history as a European colony. The legacy of this period can still be seen in the remnants of the A Famosa fortress, a testament to the Portuguese presence in Melaka.</p>
+                </span>
+                <img src="img/portuguese.jpg" alt="">
             </div>
-            <div class="categoriesParent">
-                <!-- places in melaka container -->
+            <div class="another-content3">
                 <span>
-                    <a  href="../food/food.html"><img onmouseover="expandFunc('img1')" onmouseout="normalFunc('img1')" id="img1" class="subPlace-img" src="sub-places-img/hard-rock.jpg" alt=""></a>
-                    <h1>Food</h1>
-                    <p>Explore the diverse culinary wonders of Melaka with a variety of food categories that showcase the rich flavors and unique heritage of this historic city.</p>
+                    <h1 class="main-tilte">Dutch Capture Melaka</h1>
+                    <p class="secondary-title">1641</p>
+                    <p class="desc">In the 17th century, the Dutch East India Company set its sights on the lucrative trading post of Melaka. The Dutch forces, led by Admiral Cornelis Matelieff de Jonge, launched a successful siege against the Portuguese, leading to the capture of Melaka in 1641. This marked a significant shift in power, as Melaka came under Dutch control. The Dutch influence can be seen in the development of the city, including the establishment of a town called Malakka (modern-day Malacca City) within their territorial holdings.</p>
                 </span>
+                <img src="img/dutch.jpg" alt="">
+            </div>
+            <div class="another-content4">
                 <span>
-                    <a href="../shopping/shopping.html"><img onmouseover="expandFunc('img2')" onmouseout="normalFunc('img2')" id="img2" class="subPlace-img" src="sub-places-img/shopping.jpg" alt=""></a>
-                    <h1>Shopping</h1>
-                    <p>Shop 'til You Drop in Melaka: Uncover the city's retail treasures, from traditional markets to modern boutiques. Discover the best shopping spots in Melaka right here.</p>
+                    <h1 class="main-tilte">UNESCO World Heritage Site Designation</h1>
+                    <p class="secondary-title">2008</p>
+                    <p class="desc">In recognition of its rich historical and cultural heritage, in 2008, Melaka, along with George Town in Penang, received the prestigious UNESCO World Heritage Site designation. This acknowledgment was a testament to the city's enduring significance in preserving the diverse influences of its past, from Malay, Chinese, Indian, and European cultures. Today, Melaka continues to thrive as a sought-after tourist destination, offering visitors a unique blend of historical sites, traditions, and a vibrant local population, all contributing to the city's exceptional charm and allure.</p>
                 </span>
-                <span>
-                    <a href="../activities/activities.html"><img onmouseover="expandFunc('img3')" onmouseout="normalFunc('img3')" id="img3" class="subPlace-img" src="sub-places-img/outdoor.jpg" alt=""></a>
-                    <h1>Outdoor Activities</h1>
-                    <p>Embrace the Outdoors in Melaka: Dive into the natural beauty and adventure that Melaka has to offer. Explore exciting outdoor activities for all ages and interests.</p>
-                </span>
-                <span>
-                    <a href="../beach/beach.html"><img onmouseover="expandFunc('img4')" onmouseout="normalFunc('img4')" id="img4" class="subPlace-img" src="sub-places-img/pulau-besar.jpg" alt=""></a>
-                    <h1>Beach</h1>
-                    <p>Melaka's Hidden Beach Gems: Discover the tranquil and picturesque beaches along the Melakan coast. From serene shores to sandy retreats, explore the beauty of Melaka's coastal wonders</p>
-                </span>
-                <span>
-                    <a href="gallery.html"><img onmouseover="expandFunc('img5')" onmouseout="normalFunc('img5')" id="img5" class="subPlace-img" src="sub-places-img/gallery.jpg" alt=""></a>
-                    <h1>Gallery</h1>
-                    <p>Immerse in Art and Culture: Delve into Melaka's vibrant art scene by exploring its galleries and exhibition spaces. Discover the city's artistic gems and cultural treasures right here</p>
-                </span>
-                <span>
-                    <a href="top10bestplaces.html"><img onmouseover="expandFunc('img6')" onmouseout="normalFunc('img6')" id="img6" class="subPlace-img" src="sub-places-img/vintage.jpg" alt=""></a>
-                    <h1>Top 10 Things to do in Melaka</h1>
-                    <p>Melaka's Top 10 Must-Visit Places: Explore the definitive list of the city's most iconic and enchanting destinations. From historical landmarks to cultural gems, discover Melaka's essential sights here.</p>
-                </span>
-            </div>       
+                <img src="img/unesco.jpg">
+            </div>
         </section>
        
         <footer>
-            <span>
+            <span class="logo-footer">
+                <h1>Melaka<br>Website</h1>
+            </span>
+            <span class="secondary-footer">
                <h1>Follow Us</h1>
                 <ul>
-                    <li><a href="https://www.instagram.com/naaasruul/">Instagram</a></li>
-                    <li><a href="https://www.instagram.com/naaasruul/">Facebook</a></li>
-                    <li><a href="https://www.instagram.com/naaasruul/">twitter</a></li>
+                    <li><a href="https://www.instagram.com/melakacity/?hl=en">Instagram</a></li>
+                    <li><a href="https://www.facebook.com/melakamalacca/?locale=ms_MY">Facebook</a></li>
+                    <li><a href="https://twitter.com/Melakahariini?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">twitter</a></li>
                 </ul>
             </span>
         </footer>

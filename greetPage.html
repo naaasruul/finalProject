@@ -1,4 +1,4 @@
-s<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,15 +10,14 @@ s<!DOCTYPE html>
     <video id="video-background" autoplay muted loop>
         <source src="myvideo.mp4" type="video/mp4">
     </video>
-    <div class="card">
-        <h1>WELCOME TO MALACCA</h1>
-        <h2>Please Enter Your Name</h2>
-        <span>
-            <input type="text" id="username" placeholder="Enter Your Name">
-            <button onclick="inputuser()">Submit</button>
-        </span>
-        
-    </div>
+    <span class="userinput">
+        <h1 class="title">WELCOME TO MALACCA</h1>
+        <input type="text" placeholder="Enter Your Name" id="username">
+    </span>
+    <span>
+        <img onclick="inputuser()" src="right.png" alt="">
+    </span>
+    
 </body>
 <script src="pages/home/homeScript.js"></script>
 </html>

@@ -10,35 +10,119 @@ header {
     font-size: 4em;
 }
 
-section{
-    padding: 2em 7em;
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 section .food-parent{
-    margin-top: 3em ;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 30px;
     grid-row-gap: 19px;
+
+    padding: 2em 4em;
+    margin: 0 2em;
 }
 
-.food-parent span {
+
+.food-parent .item {
     border-radius: 15px ;
+    /* border: solid black 2px; */
+    overflow: hidden;
+    /* background-color: antiquewhite; */
     padding: 1em;
-    width: 90%;
-    box-shadow: -8px 6px 66px -17px rgba(0,0,0,0.5);
-    -webkit-box-shadow: -8px 6px 66px -17px rgba(0,0,0,0.5);
-    -moz-box-shadow: -8px 6px 66px -17px rgba(0,0,0,0.5);
-    
+    display: flex;
+    flex-direction: column;
+    gap: 0.7em;
+
+    -webkit-box-shadow: -10px 16px 27px -15px rgba(0,0,0,0.42);
+    -moz-box-shadow: -10px 16px 27px -15px rgba(0,0,0,0.42);
+    box-shadow: -10px 16px 27px -15px rgba(0,0,0,0.42);
+
 }
-.food-parent span img{
+.food-parent .item img{
     width: 100%;
-    
     height: 50vh;
     object-fit: cover;
     border-radius: 7.5px ;
-    border: solid 3px rgb(240, 240, 240);
+    border: solid 3px rgb(240, 240, 240); 
+}
+
+.food-parent .item .item-title-container h1,p{
+    margin: 0;
+    padding: 0.4em 0;
+}
+
+.food-parent .item .item-title-container .rating{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.food-parent .item .item-title-container .star{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px   ;
+}
+
+#preview-container{
+    position: fixed;
+    top:0; left: 0;
+    min-height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    display: none;
+    align-items: center;
+    justify-content: center;
     
 }
+
+#preview-card{
+    border-radius: 15px ;
+    background-color: whitesmoke;
+    padding: 0 0 2em 0;
+    height: 70vh    ;
+    width: 50%;
+    overflow: hidden;
+    position: relative;
+    
+}
+
+#preview-card #preview-title-container{
+    padding: 2em 4em ;
+    display: inline-flex;
+    flex-direction: column;
+    height: 25vh;
+    gap: 1em;
+    overflow: auto;
+}
+
+#preview-card #preview-img{
+    width: 100%;
+    object-fit: cover;
+    height: 40vh;
+}
+#preview-title{
+    font-size: 2.3em;
+    margin: 0;
+}
+
+.close-btn{
+    position: absolute;
+    top: 1.5em;
+    width: 30px;
+    left: 91%;
+    /* background-color: rgb(255, 255, 255); */
+
+}
+
+
+
+
 

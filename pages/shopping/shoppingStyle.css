@@ -1,0 +1,64 @@
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(shoppingimg/shopping-header.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 4em;
+}
+
+
+.parent {
+    display: grid;
+    grid-template-columns: 0.3fr 1fr;
+    grid-template-rows:8em repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    .div3,.div4,.div5,.div6{
+        padding: 2em;
+        height: 40vh;
+        display: flex;
+        /* width: 100%; */
+        flex-direction: row;  
+    }
+    /* div for categories bar */
+    .div1 { 
+        grid-area: 1 / 1 / 6 / 2;
+        display: flex;
+        padding: 2em;
+        flex-direction: column;
+        border-right: solid 1px rgb(132, 132, 132) ;
+
+     }
+     /* div for title */
+    .div2 { 
+        grid-area: 1 / 2 / 2 / 3; 
+        padding: 2em;
+    }
+    /* list of items */
+    .div3 {
+         grid-area: 2 / 2 / 3 / 3;
+        }
+
+    .img-container{
+        width: 400px;
+        overflow: hidden;
+        border: solid 2px black;
+    }
+    .gambar{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    #item{
+        display: flex;
+        padding: 1.5em;
+        width: 50%;
+      };
+    .div4 { grid-area: 3 / 2 / 4 / 3; }
+    .div5 { grid-area: 4 / 2 / 5 / 3; }
+    .div6 { grid-area: 5 / 2 / 6 / 3; }

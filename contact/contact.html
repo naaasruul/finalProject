@@ -9,29 +9,28 @@
 </head>
 <body>
     <nav>
-        <div class="logo"><i onclick="toggleSlideMenu()" class="fa-solid fa-bars fa-lg" style="color: #ffffff;"></i>Explore Malacca </div>
+        <div class="logo"><img src="../pages/burgerMenu.png" onclick="toggleSlideMenu()" class="icon"></i>Explore Malacca </div>
         <ul>
             <li><a href="../pages/home/homepage.html">Home</a></li>
             <li><a href="../pages/home/homepage.html#about-melaka">About Melaka</a></li>
             <li>
-                <select name="" onchange="navigateToPage()" id="attractions">
-                    <option selected disabled>Attractions</option>
+                <select name="" onchange="navigateToPage()" id="Categories">
+                    <option selected disabled>Categories</option>
                     <option value="../pages/food/food.html">Food</option>
                     <option value="../pages/shopping/shopping.html">Shopping</option>
-                    <option value="../pages/beach/beach.html">Beach</option>
-                    <option value="../pages/top10ThingstodoinMalacca/top10bestplaces.html">10 Things to do</option>
+                    <option value="../pages/activities/activities.html">Outdoor Activities</option>
                 </select>
             </li>
-            <li><a href="#transportation">Transportation</a></li>
+            <li><a href="../pages/myownphoto/gallery.html">Review</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
     </nav>
     <div id="sideMenu">
-        <span><h1>Side Menu </h1><i onclick="toggleSlideMenu()" class="fa-solid fa-x fa-lg"></i></span>
+        <span><h1>Side Menu </h1><img src="../pages/close.png" onclick="toggleSlideMenu()" class="icon"></span>
         <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="../home/homepage.html#about-melaka">About Melaka</a></li>
-            <li><a href="#transportation">Transportation</a></li>
+            <li><a href="../pages/home/homepage.html">Home</a></li>
+            <li><a href="../pages/home/homepage.html#about-melaka">About Melaka</a></li>
+            <li><a href="../pages/myownphoto/gallery.html">Review</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
     </div>
@@ -49,8 +48,19 @@
             <span><label for="">Email</label><input id="email" type="email"></span> 
         </div>
         <span><label for="">Leave us a few word*</label><textarea id="feedback" style="height: 200px;" type=""></textarea></span> 
-        <span id="submit-container"><button>Submit</button></span>
+        <div id="submit-container"  class="row">
+            <button onclick="contactBtn()" style="width: 5em; padding: 0.5em;">Submit</button>
+        </div>
     </form>
+    <script>
+        function contactBtn(){
+            firstName = document.getElementById("firstname").value
+            lastName = document.getElementById("lastname").value
+
+            alert(`Thank you for your submission! \n\n first name: ${firstName} \n last name: ${lastName}`);
+
+        }
+    </script>
 </body>
 <script src="https://kit.fontawesome.com/d46a78d0a5.js" crossorigin="anonymous"></script>
 <script src="../pages/script.js"></script>
